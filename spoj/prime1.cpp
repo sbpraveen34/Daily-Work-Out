@@ -28,10 +28,10 @@ vector<int> fact( int n)
     return a;
 }
 
-int main()
+void printoutput(int n)
 {
     vector<int> a;
-    a   =   fact(6);
+    a   =   fact(n);
     int pos;
     for(int i=a.size()-1;i>=0;i--)
     {
@@ -45,5 +45,17 @@ int main()
     }
     for(int i=pos;i>=0;i--)
         cout<<a[i];
+}
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        int n;
+        scanf("%d",&n);
+        printoutput(n);
+        cout<<endl;
+    }
 return 0;
 }
